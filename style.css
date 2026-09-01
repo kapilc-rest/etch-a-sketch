@@ -9,12 +9,12 @@ body{
     height: 80vh;
 }
 
-.grid {
+.row {
     display: flex;
     flex:1;
 }
 
-.meow {
+.gridMeow {
     display: flex;
     border: solid 1px black;
     box-sizing: border-box;
