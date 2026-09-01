@@ -1,5 +1,3 @@
-//create new div
-
 let container = document.querySelector("#container");
 
 function addChild(j) {
@@ -11,4 +9,14 @@ function addChild(j) {
     }
 }
 
-addChild(16);
+function addMoreChild() {
+    addChild(16);
+    for(let i = 0; i < 16; i++){
+        let superSubDiv = document.createElement("div");
+        superSubDiv.classList.add("meow");
+        subDiv.appendChild(superSubDiv);
+        console.log(i);
+    }
+}
+
+addMoreChild();
