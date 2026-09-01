@@ -1,6 +1,14 @@
 //create new div
-let subDiv = document.createElement("div");
-subDiv.classList.add("grid");
 
 let container = document.querySelector("#container");
-container.append(subDiv);
+
+function addChild(j) {
+    for(let i=0; i<j; i++){
+        let subDiv = document.createElement("div");
+        subDiv.classList.add("grid");
+        container.appendChild(subDiv);
+        console.log(i);
+    }
+}
+
+addChild(16);
