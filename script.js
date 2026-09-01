@@ -22,7 +22,7 @@ function addGrid(size) {
 
 function makeGrid() {
     let size = getUserChoice();
-    if(isNaN(size) || size <= 0 || size > 100) 
+    if(isNaN(size) || !Number.isInteger(size) || size <= 0 || size > 100) 
         alert("Don't play with me");
     else
         addGrid(size); 
