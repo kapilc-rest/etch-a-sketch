@@ -1,5 +1,10 @@
 let container = document.querySelector("#container");
 
+function getUserChoice() {
+    return prompt("Number of rows and columns:");
+    
+}
+
 function addChild(size) {
     for(let i = 0; i < size; i++){
         let subDiv = document.createElement("div");
@@ -13,7 +18,6 @@ function addChild(size) {
     }
 }
 
-addChild(size);
 
-let divSize = subDiv.width;
-    console.log(divSize);
+let button = document.querySelector("button");
+button.addEventListener("click", () => makeGrid())
