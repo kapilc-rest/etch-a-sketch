@@ -1,5 +1,4 @@
 let container = document.querySelector("#container");
-let size = 16;
 
 function getUserChoice() {
     return prompt("Number of rows and columns:");
@@ -28,5 +27,4 @@ function makeGrid() {
 let button = document.querySelector("button");
 button.addEventListener("click", () => makeGrid())
 
-console.log(size);
-addGrid(size);
+addGrid(16);
