@@ -13,7 +13,7 @@ function addGrid(size) {
         for(let j = 0; j < size ; j++) {
             let subSubDiv = document.createElement("div");
             subSubDiv.classList.add("gridMeow");
-            subDiv.appendChild(superSubDiv);
+            subDiv.appendChild(subSubDiv);
         }
         container.appendChild(subDiv);
     }
@@ -27,4 +27,5 @@ function makeGrid() {
 let button = document.querySelector("button");
 button.addEventListener("click", () => makeGrid())
 
+console.log(size);
 addGrid(size);
