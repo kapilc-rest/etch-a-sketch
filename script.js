@@ -17,6 +17,7 @@ function addGrid(size) {
         }
         container.appendChild(subDiv);
     }
+    playGrid();
 }
 
 function makeGrid() {
@@ -24,16 +25,16 @@ function makeGrid() {
     addGrid(size);
 }
 
+function playGrid() {
+    let gridElements = document.querySelectorAll(".gridMeow")
+    gridElements.forEach( (gridMeow) => {
+        gridMeow.addEventListener("mouseenter", () => {
+            gridMeow.style.backgroundColor = "black";
+        })
+    });
+}
+
 let button = document.querySelector("button");
 button.addEventListener("click", () => makeGrid())
 
 addGrid(16);
-
-let gridElements = document.querySelectorAll(".gridMeow")
-gridElements.forEach( (gridMeow) => {
-    gridMeow.addEventListener("onmousenter", () => {
-        gridMeow.backgroundColor = black;
-    })
-}
-
-)
