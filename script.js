@@ -1,20 +1,19 @@
 let container = document.querySelector("#container");
 
-function addChild(k) {
-    for(let i=0; i<k; i++){
+function addChild(size) {
+    for(let i = 0; i < size; i++){
         let subDiv = document.createElement("div");
         subDiv.classList.add("grid");
-        for(let j = 0; j < k ; j++) {
+        for(let j = 0; j < size ; j++) {
             let superSubDiv = document.createElement("div");
             superSubDiv.classList.add("meow");
             subDiv.appendChild(superSubDiv);
         }
         container.appendChild(subDiv);
-        console.log(i);
     }
 }
 
-addChild(16);
+addChild(size);
 
 let divSize = subDiv.width;
     console.log(divSize);
