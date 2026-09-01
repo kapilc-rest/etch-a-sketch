@@ -1,7 +1,7 @@
 let container = document.querySelector("#container");
 
 function getUserChoice() {
-    return prompt("Number of rows and columns:");
+    return +prompt("Number of rows and columns:");
     
 }
 
@@ -22,7 +22,10 @@ function addGrid(size) {
 
 function makeGrid() {
     let size = getUserChoice();
-    addGrid(size);
+    if(isNaN(size) || size <= 0 || size > 100) 
+        alert("Don't play with me");
+    else
+        addGrid(size); 
 }
 
 function playGrid() {
