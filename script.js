@@ -28,3 +28,12 @@ let button = document.querySelector("button");
 button.addEventListener("click", () => makeGrid())
 
 addGrid(16);
+
+let gridElements = document.querySelectorAll(".gridMeow")
+gridElements.forEach( (gridMeow) => {
+    gridMeow.addEventListener("onmousenter", () => {
+        gridMeow.backgroundColor = black;
+    })
+}
+
+)
