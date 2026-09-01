@@ -7,6 +7,7 @@ function getUserChoice() {
 }
 
 function addGrid(size) {
+    container.innerHTML = "";
     for(let i = 0; i < size; i++){
         let subDiv = document.createElement("div");
         subDiv.classList.add("row");
