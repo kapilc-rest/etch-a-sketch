@@ -4,6 +4,8 @@ function addChild(k) {
     for(let i=0; i<k; i++){
         let subDiv = document.createElement("div");
         subDiv.classList.add("grid");
+        let divSize = subdiv.width;
+        console.log(divSize);
         for(let j = 0; j < k ; j++) {
             let superSubDiv = document.createElement("div");
             superSubDiv.classList.add("meow");
@@ -14,11 +16,4 @@ function addChild(k) {
     }
 }
 
-function addMoreChild() {
-    addChild(16);
-    for(let i = 0; i < 16; i++){
-        console.log(i);
-    }
-}
-
-addMoreChild();
+addChild(16);

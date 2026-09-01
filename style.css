@@ -8,5 +8,16 @@ body{
 }
 
 .grid {
+    display: flex;
+    min-width: 10px;
+    min-height: 10px;
+    flex:1;
+}
+
+.meow {
+    display: flex;
+    flex-basis: auto;
     border: solid 1px black;
+    min-width: 10px;
+    min-height: 10px;
 }
